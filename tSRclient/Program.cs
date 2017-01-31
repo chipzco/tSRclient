@@ -36,7 +36,7 @@ namespace tSRclient
                 Log.Warning(e.Source);
 
             }
-            eventHubProxy.Invoke("send", "TSR CLIENT","FUCK WHY NOT REPLY");
+            eventHubProxy.Invoke("send", "TSR CLIENT","Please  REPLY if you see this.");
 
             eventHubProxy.On<string, string>("broadcastMessage", (name, message) => Log.Information("Event received by {name} : {message}", name, message));
 
